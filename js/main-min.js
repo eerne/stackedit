@@ -4763,7 +4763,10 @@ define("config", function() {}), define("settings", [ "underscore", "config" ], 
   n.currentTime - u > 18e4 && (_gaq.push([ "_trackPageview" ]), u = n.currentTime);
  }
  var s = new i("googleAnalytics", "Google Analytics", !0);
- s.settingsBlock = "<p>Sends anonymous statistics about usage and errors to help improve StackEdit.</p>";
+ s.settingsBlock = "<p>Sends anonymous statistics about usage and errors to help improve StackEdit.</p>", 
+ s.defaultConfig = {
+  enabled: !1
+ };
  var a = !1, l = !1;
  window._gaq = [];
  var c = function() {
